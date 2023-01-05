@@ -235,7 +235,7 @@ main>* {
     transition: all 0.3s ease;
 }
 
-.services .service-card:hover{
+.services .service-card:hover {
     box-shadow: none;
 }
 
@@ -260,17 +260,17 @@ main>* {
 
 /* Resume Styles */
 
-.resume{
+.resume {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.resume .resume-content-container{
+.resume .resume-content-container {
     margin-bottom: 30px;
 }
 
-.resume .resume-info-box{
+.resume .resume-info-box {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -283,12 +283,12 @@ main>* {
     color: #474747;
 }
 
-.resume .resume-info-box .resume-content-box{
+.resume .resume-info-box .resume-content-box {
     border-bottom: 1px solid #d1d1d1;
     padding-bottom: 30px;
 }
 
-.resume .resume-info-box .resume-content-box:last-child{
+.resume .resume-info-box .resume-content-box:last-child {
     border-bottom: none;
 }
 
@@ -314,4 +314,70 @@ main>* {
     line-height: 28px;
     color: #757575;
     padding-right: 100px;
+}
+
+/* Footer Styles */
+
+footer .section-title {
+    text-align-last: left;
+}
+
+footer {
+    padding: 130px 0;
+    background-color: #FFF8F3;
+}
+
+footer .footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+footer .footer-container .footer-info {
+    width: 55%;
+}
+
+footer .footer-container .footer-form {
+    width: 45%;
+}
+
+footer .footer-container .footer-info-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #474747;
+}
+
+footer .footer-container .footer-social-icons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+footer .footer-container .footer-social-icons a img{
+    width: 24px;
+}
+
+footer .footer-container .footer-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer .footer-container .footer-form form *:focus{
+    outline: none;
+}
+
+footer .footer-container .footer-form form input:not([type="submit"]),
+footer .footer-container .footer-form form textarea{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #757575;
+    border: 1px solid #d1d1d1;
+    padding: 20px;
+}
+
+footer .footer-container .footer-form form input[type="submit"]{
+    
 }
