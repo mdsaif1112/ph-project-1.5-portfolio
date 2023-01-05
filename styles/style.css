@@ -53,6 +53,7 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 30px;
 }
 
 /* Nav Styles */
@@ -166,7 +167,7 @@ header .banner-container .img img {
 
 main>* {
     width: 1200px;
-    margin: 0 auto;
+    margin: 130px auto;
 }
 
 .section-title {
@@ -191,7 +192,6 @@ main>* {
 /* About Styles */
 
 .about {
-    margin: 130px auto;
     padding: 130px 150px;
     background-color: #FFF8F3;
 }
@@ -205,7 +205,7 @@ main>* {
     text-transform: capitalize;
 }
 
-.about .info-card-container .info-card h3 {
+.about .info-card-container .info-card h5 {
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
@@ -215,33 +215,40 @@ main>* {
 
 /* Services Styles */
 
-.services {
-    margin-bottom: 130px;
-}
 
-.services .section-desc {
+.services .section-desc,
+.resume .section-desc {
     text-align: center;
     padding: 0 110px;
     margin-bottom: 50px;
 }
 
+.services .service-card-container {
+    gap: 24px;
+}
+
 .services .service-card {
     padding: 30px;
     background: #FFFFFF;
-    width: 23%;
-    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06)
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.services .service-card:hover{
+    box-shadow: none;
 }
 
 .services .service-card img {
-    margin-bottom: 30px;
+    width: 44px;
 }
 
-.services .service-card h3 {
+.services .service-card h5 {
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
     color: #181818;
-    margin-bottom: 20px;
+    margin: 30px 0 20px;
 }
 
 .services .service-card p {
@@ -249,4 +256,62 @@ main>* {
     font-size: 16px;
     line-height: 28px;
     color: #757575;
+}
+
+/* Resume Styles */
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume .resume-content-container{
+    margin-bottom: 30px;
+}
+
+.resume .resume-info-box{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.resume .resume-info-box .resume-content-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #474747;
+}
+
+.resume .resume-info-box .resume-content-box{
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 30px;
+}
+
+.resume .resume-info-box .resume-content-box:last-child{
+    border-bottom: none;
+}
+
+.resume .resume-info-box .resume-content-box h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #474747;
+}
+
+.resume .resume-info-box .resume-content-box span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+    margin: 15px 0;
+    display: inline-block;
+}
+
+.resume .resume-info-box .resume-content-box p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+    padding-right: 100px;
 }
