@@ -1,0 +1,252 @@
+/* Common Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.primary-color {
+    color: #FD6E0A;
+}
+
+.primary-btn {
+    font-weight: 500;
+    height: 50px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: #FD6E0A;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    border: 2px solid #FD6E0A;
+}
+
+.secondary-btn {
+    font-weight: 500;
+    height: 50px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FD6E0A;
+    padding: 0 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    border: 2px solid #FD6E0A;
+}
+
+.primary-btn:hover {
+    color: #181818;
+    background-color: #FFFFFF;
+}
+
+.secondary-btn:hover {
+    color: #FFFFFF;
+    background-color: #FD6E0A;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Nav Styles */
+
+header {
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #FFF8F3;
+    background-image: url(../images/developer.png), url(../images/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: 6% 90%, auto;
+    background-position: 2% 50%, right bottom;
+}
+
+header nav {
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto -80px;
+    padding: 10px 0;
+    position: relative;
+}
+
+header nav .nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+header nav .nav-menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+header nav .nav-menu li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #474747;
+    text-transform: capitalize;
+}
+
+header nav .nav-title a {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61px;
+    color: #181818;
+    text-decoration: none;
+}
+
+/* Banner Styles */
+
+header .banner-container {
+    width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+header .banner-container>* {
+    width: 50%;
+}
+
+header .banner-container .info {
+    margin: auto 0;
+}
+
+header .banner-container .info h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 27px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+
+header .banner-container .info h1 {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 85px;
+    color: #181818;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+header .banner-container .info p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+header .banner-container .info .primary-btn {
+    margin-right: 10px;
+}
+
+header .banner-container .img {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+header .banner-container .img img {
+    margin-right: -150px;
+    width: 77%;
+}
+
+/* Main Styles */
+
+main>* {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #181818;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.section-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+/* About Styles */
+
+.about {
+    margin: 130px auto;
+    padding: 130px 150px;
+    background-color: #FFF8F3;
+}
+
+.about .info-card-container .info-card h6 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #757575;
+    text-transform: capitalize;
+}
+
+.about .info-card-container .info-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #474747;
+}
+
+/* Services Styles */
+
+.services {
+    margin-bottom: 130px;
+}
+
+.services .section-desc {
+    text-align: center;
+    padding: 0 110px;
+    margin-bottom: 50px;
+}
+
+.services .service-card {
+    padding: 30px;
+    background: #FFFFFF;
+    width: 23%;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06)
+}
+
+.services .service-card img {
+    margin-bottom: 30px;
+}
+
+.services .service-card h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+
+.services .service-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+}
