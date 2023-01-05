@@ -40,7 +40,7 @@
 }
 
 .primary-btn:hover {
-    color: #181818;
+    color: #FD6E0A;
     background-color: #FFFFFF;
 }
 
@@ -379,5 +379,5 @@ footer .footer-container .footer-form form textarea{
 }
 
 footer .footer-container .footer-form form input[type="submit"]{
-    
+    width: 150px;
 }
